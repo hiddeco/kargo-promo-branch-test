@@ -1,0 +1,11 @@
+configVersion: v1alpha1
+branchConfigs:
+- pattern: env/test
+  appConfigs:
+    akuity-platform-aws:
+      configManagement:
+        path: env/test
+        kustomize:  
+          buildOptions: "--enable-helm --load-restrictor LoadRestrictionsNone"
+      outputPath: test
+      combineManifests: true
