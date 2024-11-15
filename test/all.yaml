@@ -25,5 +25,5 @@ spec:
         app: nginx-app
     spec:
       containers:
-      - image: public.ecr.aws/nginx/nginx:1.27.2
+      - image: public.ecr.aws/nginx/nginx:placeholder
         name: nginx
